@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Leader Autos Ltd | Vehicle Reservations</title>
+  <meta name="description" content="Reserve a vehicle with Leader Autos Ltd.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="hero">
+  <nav class="nav">
+    <a class="brand" href="#"><img src="logo.svg" alt="Leader Autos Ltd logo"><span>Leader Autos Ltd</span></a>
+    <a class="nav-btn" href="#reserve">Reserve a vehicle</a>
+  </nav>
+  <div class="hero-content">
+    <p class="eyebrow">LEADER AUTOS LTD</p>
+    <h1>Find your next vehicle.</h1>
+    <p class="lead">Make a reservation request online and our team will contact you to confirm the vehicle and appointment.</p>
+    <a class="button" href="#reserve">Make a reservation</a>
+  </div>
+</header>
+
+<main>
+<section class="section">
+  <div class="section-heading">
+    <p class="eyebrow">OUR SERVICE</p>
+    <h2>Simple vehicle reservations</h2>
+    <p>Choose the type of vehicle you're interested in, tell us when you'd like to visit, and send your request.</p>
+  </div>
+  <div class="cards">
+    <article><span>01</span><h3>Choose</h3><p>Tell us which vehicle or type of vehicle you're interested in.</p></article>
+    <article><span>02</span><h3>Reserve</h3><p>Send your preferred date and time using the form below.</p></article>
+    <article><span>03</span><h3>Confirm</h3><p>We'll contact you to confirm availability and your appointment.</p></article>
+  </div>
+</section>
+
+<section id="reserve" class="section reserve">
+  <div class="form-wrap">
+    <div>
+      <p class="eyebrow">RESERVATION REQUEST</p>
+      <h2>Reserve a vehicle</h2>
+      <p>Submitting this form is a request only. Your reservation is confirmed after Leader Autos Ltd contacts you.</p>
+    </div>
+    <form id="reservationForm">
+      <div class="grid">
+        <label>Full name<input name="name" required placeholder="Your name"></label>
+        <label>Phone number<input name="phone" required type="tel" placeholder="07..."></label>
+      </div>
+      <label>Email address<input name="email" required type="email" placeholder="you@example.com"></label>
+      <div class="grid">
+        <label>Vehicle / registration<input name="vehicle" required placeholder="e.g. BMW 3 Series / AB12 CDE"></label>
+        <label>Preferred date<input name="date" required type="date"></label>
+      </div>
+      <label>Preferred time<select name="time" required>
+        <option value="">Select a time</option>
+        <option>09:00</option><option>10:00</option><option>11:00</option>
+        <option>12:00</option><option>13:00</option><option>14:00</option>
+        <option>15:00</option><option>16:00</option><option>17:00</option>
+      </select></label>
+      <label>Message<textarea name="message" rows="4" placeholder="Anything you'd like us to know?"></textarea></label>
+      <button class="button" type="submit">Send reservation request</button>
+      <p class="small">By submitting, you are requesting an appointment; this does not itself guarantee availability.</p>
+    </form>
+    <div id="success" class="success" hidden>Thanks! Your request has been prepared. Please use the email option shown below to send it to Leader Autos Ltd.</div>
+  </div>
+</section>
+
+<section class="contact section">
+  <div><p class="eyebrow">CONTACT</p><h2>Leader Autos Ltd</h2><p>175 Rutland Road<br>Sheffield, S3 9PT</p></div>
+  <div><p><strong>Phone</strong><br><a href="tel:07424331392">07424 331392</a></p>
+       <p><strong>Email</strong><br><a href="mailto:wesellcarsuk@gmail.com">wesellcarsuk@gmail.com</a></p></div>
+</section>
+</main>
+
+<footer>© <span id="year"></span> Leader Autos Ltd. All rights reserved.</footer>
+<script src="script.js"></script>
+</body>
+</html>
